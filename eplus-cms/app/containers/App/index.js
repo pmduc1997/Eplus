@@ -15,6 +15,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
 import CustomLayout from '../../components/Layout/index'
+import {routes} from './constants'
 export default function App() {
   return (
     // <div>
@@ -24,6 +25,19 @@ export default function App() {
     //   </Switch>
     //   <GlobalStyle />
     // </div>
-    <CustomLayout />
+    <CustomLayout>
+      <Switch>
+            {routes.map((route, index) => (
+              // Render more <Route>s with the same paths as
+              // above, but different components this time.
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                children={<route.main />}
+              />
+            ))}
+          </Switch>
+    </CustomLayout>
   );
 }

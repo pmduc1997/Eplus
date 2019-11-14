@@ -8,3 +8,17 @@
  * Follow this format:
  * export const YOUR_ACTION_CONSTANT = 'yourproject/YourContainer/YOUR_ACTION_CONSTANT';
  */
+import React from 'react'
+import Users from '../Users'
+import Dashboard from '../Dashboard'
+export const routes = [
+    {
+        path: "/",
+        exact: true,
+        main: () => <Dashboard />
+    },
+    {
+        path: "/users",
+        main: () => <Users />
+    },
+];
