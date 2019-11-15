@@ -128,13 +128,15 @@ export default class Users extends Component {
     }
     render() {
         return (
-            <Table
-                columns={columns}
-                rowKey={record => record.key}
-                dataSource={this.state.data}
-                pagination={this.state.pagination}
-                loading={this.state.loading}
-            />
+            <div style={{ backgroundColor: 'white' }}>
+                <Table
+                    columns={columns}
+                    rowKey={record => record.key}
+                    dataSource={this.state.data}
+                    pagination={this.state.pagination}
+                    loading={this.state.loading}
+                />
+            </div>
         );
     }
 }

@@ -1,20 +1,29 @@
 export default {
-    logo: {
-        width: '120px',
-        height: '31px',
-        background: 'rgba(255, 255, 255, 0.2)',
-        margin: '16px 28px 16px 0',
-        float: 'left',
+    header: {
+        backgroundColor: '#343a40',
+        display: 'flex',
+        flexDirection: 'row'
     },
-    avatar:{
+    logo: {
+        width: '200px',
+    },
+    siderIcon: {
+        fontSize: '18px',
+        lineHeight: '64px',
+        padding: '0 20px',
+        cursor: 'pointer',
+        color:'white'
+    },
+    menuItem: {
+        display: 'flex',
+        alignItems: 'center',
+        cursor: 'pointer',
+    },
+    avatar: {
         verticalAlign: 'middle',
         width: '30px',
         height: '30px',
         borderRadius: '50%',
-        marginRight:'10px'
+        marginRight: '10px',
     },
-    menuItem:{
-        display:'flex',
-        alignItems:'center'
-    }
 }

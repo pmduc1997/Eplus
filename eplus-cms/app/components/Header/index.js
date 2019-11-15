@@ -35,11 +35,24 @@ const content = (
     </div>
 );
 export default class CustomHeader extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            collapsed: true
+        }
+    }
     render() {
         return (
-            <Header style={{ backgroundColor: '#343a40' }}>
+            <Header style={styles.header}>
                 <div style={styles.logo} />
-                <div style={{ flex:1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', }}>
+                <div>
+                    <Icon
+                        style={styles.siderIcon}
+                        type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                        onClick={this.toggle}
+                    />
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', }}>
                     <div style={{ marginRight: '25px' }}>
                         <Popover placement="bottomRight" title={text} content={content} trigger="click">
                             <Badge count={5}>

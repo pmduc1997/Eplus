@@ -24,7 +24,7 @@ export default class Dashboard extends Component {
                     key: '3',
                     cardInfo: 'SALES',
                     cardIcon: 'shopping-cart',
-                    cardIconColor:'blue',
+                    cardIconColor:'orange',
                     cardMore: '25K'
                 },
                 {
