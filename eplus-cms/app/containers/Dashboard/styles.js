@@ -1,7 +1,33 @@
 export default {
     reportCard:{
-        backgroundColor:'#00a0e9',
         borderStyle:'solid',
-        borderWidth:'5px',
-    }
+        borderWidth:'1px',
+        borderRadius:'5px',
+        background: '#fff',
+        borderColor:'#e0e0e0'
+    },
+    cardTop:{
+        height:'80px',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    cardInfo:{
+        borderStyle:'solid',
+        borderWidth:'1px',
+        padding:'7px',
+        borderRadius:'15px',
+        fontSize:'12px',
+        borderColor:'#e0e0e0',
+        color: '#868e96'
+    },
+    cardBottom:{
+        height:'80px',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    divider:{
+        padding:'0px'
+    },
 }

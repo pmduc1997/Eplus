@@ -41,7 +41,6 @@ export default class CustomLayout extends Component {
                     <Layout style={{ height: '100%', padding: '24px 24px 24px 24px' }}>
                         <Content
                             style={{
-                                background: '#fff',
                                 padding: 24,
                                 margin: 0,
                                 height: '100%',
