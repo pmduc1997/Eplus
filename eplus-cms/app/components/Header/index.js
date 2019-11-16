@@ -44,13 +44,6 @@ export default class CustomHeader extends Component {
     render() {
         return (
             <Header style={styles.header}>
-                <div>
-                    <Icon
-                        style={styles.siderIcon}
-                        type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                        onClick={this.toggle}
-                    />
-                </div>
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', }}>
                     <div style={{ marginRight: '25px' }}>
                         <Popover placement="bottomRight" title={text} content={content} trigger="click">

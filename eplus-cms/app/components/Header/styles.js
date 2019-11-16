@@ -5,13 +5,6 @@ export default {
         flexDirection: 'row',
         paddingLeft:'0px'
     },
-    siderIcon: {
-        fontSize: '18px',
-        lineHeight: '64px',
-        padding: '0 20px',
-        cursor: 'pointer',
-        color:'white'
-    },
     menuItem: {
         display: 'flex',
         alignItems: 'center',

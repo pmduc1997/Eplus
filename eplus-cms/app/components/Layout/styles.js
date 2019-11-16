@@ -8,6 +8,14 @@ export default {
         background: '#343a40',
         display:'flex',
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        cursor: 'pointer',
+    },
+    logoImg:{
+        height:'25px'
+    },
+    logoName:{
+        color:'white',
+        fontSize:'22px'
     }
 }

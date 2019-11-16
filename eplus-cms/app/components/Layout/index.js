@@ -20,10 +20,21 @@ export default class CustomLayout extends Component {
     render() {
         return (
             <Layout>
-                <Sider trigger={null} collapsible breakpoint="lg" collapsed={this.state.collapsed} width={250} style={{ background: '#fff' }}>
+                <Sider
+                    trigger={null}
+                    collapsible
+                    breakpoint="lg"
+                    collapsed={this.state.collapsed}
+                    onBreakpoint={broken => {
+                        this.setState({
+                            collapsed: broken
+                        })
+                    }}
+                    width={250}
+                    style={{ background: '#fff' }}>
                     <div style={styles.logo}>
-                        <img src="https://i.pinimg.com/originals/11/08/0d/11080d2fca02b556a99911344bdc2973.jpg" style={{height:'20px'}}/>
-                        <span>Plus</span>
+                        <img src="http://evolutionldn.com/wp-content/uploads/2018/04/E-Logo-white-on-transparent.png" style={styles.logoImg} />
+                        {!this.state.collapsed ? <span style={styles.logoName}>Plus</span> : <div />}
                     </div>
                     <Menu
                         mode="inline"
