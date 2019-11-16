@@ -34,7 +34,7 @@ export default class Dashboard extends Component {
                     cardIconColor:'yellow',
                     cardMore: '55%'
                 },
-            ]
+            ],
         }
     }
     render() {
@@ -59,7 +59,7 @@ export default class Dashboard extends Component {
                                 </div>
                             </div>
                         </Col>
-                    )};
+                    )}
                 </Row>
             </div>
         );

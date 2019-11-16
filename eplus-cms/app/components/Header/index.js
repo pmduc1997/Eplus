@@ -38,13 +38,12 @@ export default class CustomHeader extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            collapsed: true
+            collapsed: false
         }
     }
     render() {
         return (
             <Header style={styles.header}>
-                <div style={styles.logo} />
                 <div>
                     <Icon
                         style={styles.siderIcon}

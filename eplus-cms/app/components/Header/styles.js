@@ -2,10 +2,8 @@ export default {
     header: {
         backgroundColor: '#343a40',
         display: 'flex',
-        flexDirection: 'row'
-    },
-    logo: {
-        width: '200px',
+        flexDirection: 'row',
+        paddingLeft:'0px'
     },
     siderIcon: {
         fontSize: '18px',
