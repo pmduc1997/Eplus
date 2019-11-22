@@ -1,10 +1,20 @@
 export default {
-    reportCard:{
+    contentBox:{
         borderStyle:'solid',
         borderWidth:'1px',
         borderRadius:'5px',
         background: '#fff',
-        borderColor:'#e0e0e0'
+        borderColor:'#e0e0e0',
+        marginBottom: '24px'
+    },
+    lineChart:{
+        padding:'12px',
+        borderStyle:'solid',
+        borderWidth:'1px',
+        borderRadius:'5px',
+        background: '#fff',
+        borderColor:'#e0e0e0',
+        marginBottom: '24px'
     },
     cardTop:{
         height:'80px',
