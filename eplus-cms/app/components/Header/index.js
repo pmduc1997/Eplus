@@ -35,11 +35,16 @@ const content = (
     </div>
 );
 export default class CustomHeader extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            collapsed: false
+        }
+    }
     render() {
         return (
-            <Header style={{ backgroundColor: '#343a40' }}>
-                <div style={styles.logo} />
-                <div style={{ width: '92%', display: 'flex', justifyContent: 'flex-end', alignItems: 'center', }}>
+            <Header style={styles.header}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', }}>
                     <div style={{ marginRight: '25px' }}>
                         <Popover placement="bottomRight" title={text} content={content} trigger="click">
                             <Badge count={5}>
